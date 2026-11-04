@@ -85,9 +85,9 @@ Other clients that speak MCP over Streamable HTTP take the URL with the key, or 
 |---|---|---|
 | `overpass_query` | Runs an Overpass QL or XML query on the full planet. The answer starts with counts and the date of the data, then one element per line. Answers over 30,000 characters are cut and can be read in parts with `offset`. | 1 request |
 | `overpass_examples` | Finds tested example queries for a topic, from a cookbook of 99 queries. | free |
-| `geocode` | Places, addresses and points of interest by name, in English, German or French, with an `overpass_area_id` for searching inside that place. | 1 geocoding request |
-| `reverse_geocode` | The address, street, city or country at a point. | 1 geocoding request |
-| `elevation` | Heights of points: a 2 m grid in Switzerland and Liechtenstein (swissALTI3D), a 30 m grid elsewhere on land (Copernicus), depths at sea (GEBCO). | 1 lookup per point |
+| `geocode_search` | Places, addresses and points of interest by name, in English, German or French, with an `overpass_area_id` for searching inside that place. | 1 geocoding request |
+| `geocode_reverse` | The address, street, city or country at a point. | 1 geocoding request |
+| `elevation_points` | Heights of points: a 2 m grid in Switzerland and Liechtenstein (swissALTI3D), a 30 m grid elsewhere on land (Copernicus), depths at sea (GEBCO). | 1 lookup per point |
 | `elevation_profile` | Distance, ascent, descent and heights along a path. | 1 lookup per sample |
 | `account_status` | Plan, use this month and the date of the data. | free |
 
