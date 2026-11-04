@@ -79,6 +79,10 @@ claude mcp add --transport http overpass https://api.overpass.ch/v1/mcp \
 
 Other clients that speak MCP over Streamable HTTP take the URL with the key, or the URL without it and the `X-API-Key` header.
 
+### As an Agent Plugin
+
+This repository is also an [Agent Plugin](https://agent-plugins.org): `plugin.json` and `mcp.json` add the server `overpass` at `https://api.overpass.ch/v1/mcp`. A plugin cannot carry your key, so add the header `X-API-Key` with your key to the server `overpass` in the settings of your client. Without it the tools are listed, and every call answers that a key is missing.
+
 ## Tools
 
 | Tool | What it does | Counts as |
@@ -111,7 +115,7 @@ Tool calls count like the same calls of the REST API.
 | Medium | CHF/EUR 59 or USD 79 | 1 million | 6 | yes |
 | Large | CHF/EUR 149 or USD 199 | 3 million | 10 | yes |
 
-The free plan is for personal, educational and non-profit projects; commercial use needs a paid plan. Every plan includes 100,000 geocoding requests a month. Prices exclude VAT, and a year costs ten months. Details: https://overpass.ch/pricing
+The free plan is for evaluation and development, and for personal, educational and non-profit projects; commercial use needs a paid plan. Every plan includes 100,000 geocoding requests a month. Prices exclude VAT, and a year costs ten months. Details: https://overpass.ch/pricing
 
 ## FAQ
 
