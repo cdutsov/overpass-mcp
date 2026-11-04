@@ -3,8 +3,12 @@
   "name": "ch.overpass/overpass",
   "title": "overpass.ch",
   "description": "Overpass API on the full planet with history, plus geocoding and elevation. Needs an API key.",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "websiteUrl": "https://overpass.ch/guides/overpass-mcp-server",
+  "repository": {"url": "https://github.com/cdutsov/overpass-mcp", "source": "github"},
+  "icons": [
+    {"src": "https://overpass.ch/static/favicon-192.png", "mimeType": "image/png", "sizes": ["192x192"]}
+  ],
   "remotes": [
     {
       "type": "streamable-http",
