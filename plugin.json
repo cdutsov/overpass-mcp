@@ -1,0 +1,10 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "overpass.ch",
+  "version": "1.0.1",
+  "description": "Overpass API on the full planet with history, plus geocoding and elevation. Needs an API key.",
+  "author": {"name": "overpass.ch", "url": "https://overpass.ch"},
+  "homepage": "https://overpass.ch/guides/overpass-mcp-server",
+  "repository": "https://github.com/cdutsov/overpass-mcp",
+  "keywords": ["openstreetmap", "overpass", "geocoding", "elevation", "maps"]
+}
