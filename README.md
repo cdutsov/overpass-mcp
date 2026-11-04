@@ -1,5 +1,7 @@
 # overpass.ch MCP server
 
+[![mcptry](https://mcptry.com/badge/ch.overpass/overpass)](https://mcptry.com/servers/ch.overpass/overpass)
+
 Hosted Overpass API with an MCP server. AI assistants connected to it query OpenStreetMap data for the whole planet, find places by name, look up heights, and answer from current data.
 
 The data covers every street, shop, building and place mapped in OpenStreetMap and is updated every minute. The Medium and Large plans can also query the map at a past date, back to September 2012.
