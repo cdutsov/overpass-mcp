@@ -6,14 +6,19 @@ Hosted Overpass API with an MCP server. AI assistants connected to it query Open
 
 The data covers every street, shop, building and place mapped in OpenStreetMap and is updated every minute. The Medium and Large plans can also query the map at a past date, back to September 2012.
 
-This repository holds the documentation and the registry entry of the hosted server at `https://api.overpass.ch/v1/mcp`. There is nothing to install.
+This repository holds the documentation and the registry entry of the hosted server at `https://api.overpass.ch/mcp` (sign-in) and `https://api.overpass.ch/v1/mcp` (API key). There is nothing to install.
 
 - Website: https://overpass.ch
+- Claude directory: https://claude.ai/directory/overpass-ch
 - Setup guide: https://overpass.ch/guides/overpass-mcp-server
 - Docs: https://overpass.ch/docs#mcp
 - Official MCP Registry: `ch.overpass/overpass`
 
 ## Setup
+
+In Claude, add overpass.ch from the [Claude directory](https://claude.ai/directory/overpass-ch). Claude Code, ChatGPT and other assistants that sign in take `https://api.overpass.ch/mcp` as a remote MCP server, then open overpass.ch for you to sign in (OAuth). The free plan works too.
+
+Clients that do not sign in send an API key:
 
 1. Create a free account and an API key at https://overpass.ch/signup.
 2. Add the server to your assistant, either as a URL with the key in it:
@@ -28,13 +33,21 @@ Transport: Streamable HTTP. Protocol versions 2026-07-28 and 2025-03-26 to 2025-
 
 ### Claude (web, desktop and mobile apps)
 
-Customize → Connectors → **+ Add** → **Add custom connector**. Name: `overpass.ch`. URL: the URL with your key. Authentication: **No sign in**.
+Open overpass.ch in the [Claude directory](https://claude.ai/directory/overpass-ch) and add it, then sign in to overpass.ch and click **Allow**. In a Team or Enterprise organisation, an owner first adds it under Organization settings → Connectors.
+
+With a key: Customize → Connectors → **+ Add** → **Add custom connector**. Name: `overpass.ch`. URL: the URL with your key. Authentication: **No sign in**.
 
 ### ChatGPT
 
-Open https://chatgpt.com/plugins, select **+** and **Add custom MCP server**. Enter a name, the URL with your key under **Connection**, and no authentication. Confirm the warning and select **Create as a plugin**. Your ChatGPT plan or workspace has to allow custom MCP servers.
+Open https://chatgpt.com/plugins, select **+** and **Add custom MCP server**. Enter a name, the URL `https://api.overpass.ch/mcp` under **Connection**, and **OAuth** as authentication. Confirm the warning, select **Create as a plugin**, then sign in to overpass.ch and click **Allow**. With a key: the URL with your key and no authentication. Your ChatGPT plan or workspace has to allow custom MCP servers.
 
 ### Claude Code
+
+```sh
+claude mcp add --transport http overpass https://api.overpass.ch/mcp
+```
+
+Then type `/mcp` in Claude Code, select `overpass` and sign in to overpass.ch in the browser. With a key:
 
 ```sh
 claude mcp add --transport http overpass https://api.overpass.ch/v1/mcp \
