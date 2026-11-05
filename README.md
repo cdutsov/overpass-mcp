@@ -94,7 +94,7 @@ Other clients that speak MCP over Streamable HTTP take the URL with the key, or 
 
 ### As an Agent Plugin
 
-This repository is also an [Agent Plugin](https://agent-plugins.org): `plugin.json` and `mcp.json` add the server `overpass` at `https://api.overpass.ch/v1/mcp`. A plugin cannot carry your key, so add the header `X-API-Key` with your key to the server `overpass` in the settings of your client. Without it the tools are listed, and every call answers that a key is missing.
+This repository is also an [Agent Plugin](https://agent-plugins.org): `plugin.json` and `mcp.json` add the server `overpass` at `https://api.overpass.ch/mcp`. On first use the client opens overpass.ch for you to sign in. A client that does not sign in can use `https://api.overpass.ch/v1/mcp` with the header `X-API-Key` instead.
 
 ## Tools
 

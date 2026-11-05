@@ -2,14 +2,18 @@
   "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
   "name": "ch.overpass/overpass",
   "title": "overpass.ch",
-  "description": "Overpass API on the full planet with history, plus geocoding and elevation. Needs an API key.",
-  "version": "1.0.2",
+  "description": "Overpass API on the full planet with history, plus geocoding and elevation. Needs an account.",
+  "version": "1.1.0",
   "websiteUrl": "https://overpass.ch/guides/overpass-mcp-server",
   "repository": {"url": "https://github.com/cdutsov/overpass-mcp", "source": "github"},
   "icons": [
     {"src": "https://overpass.ch/static/favicon-192.png", "mimeType": "image/png", "sizes": ["192x192"]}
   ],
   "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://api.overpass.ch/mcp"
+    },
     {
       "type": "streamable-http",
       "url": "https://api.overpass.ch/v1/mcp",

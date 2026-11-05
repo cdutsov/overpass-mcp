@@ -3,7 +3,7 @@
   "mcpServers": {
     "overpass": {
       "type": "streamable-http",
-      "url": "https://api.overpass.ch/v1/mcp"
+      "url": "https://api.overpass.ch/mcp"
     }
   }
 }
