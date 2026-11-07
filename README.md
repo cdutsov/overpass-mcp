@@ -1,6 +1,6 @@
 # overpass.ch MCP server
 
-[![mcptry](https://mcptry.com/badge/ch.overpass/overpass)](https://mcptry.com/servers/ch.overpass/overpass)
+[![mcptry](https://mcptry.com/badge/ch.overpass/overpass)](https://mcptry.com/servers/ch.overpass/overpass) [![overpass.ch MCP on mcprush](https://mcprush.com/badge/overpass-ch-mcp/score.svg?theme=light)](https://mcprush.com/to/overpass-ch-mcp?ref=badge)
 
 Hosted Overpass API with an MCP server. AI assistants connected to it query OpenStreetMap data for the whole planet, find places by name, look up heights, and answer from current data.
 
